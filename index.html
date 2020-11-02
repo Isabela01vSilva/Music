@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon-logo.jpg">
+    <title>Sua vibe</title>
+</head>
+<body>
+   <!-- menu --> 
+   <header> </header>
+   <a href="#sobre"><img src="img/mouse.png" alt="imagem de um mouse" id="mouse"></a>
+       <nav>
+           <ul>
+               <li><a href="#Genero">Generos Músicais</a></li>
+               <li><a href="#lista" style="color: blueviolet;"><b> Vibe Música</b></a></li>
+               <li><a href="#login">Login</a></li>
+           </ul>
+       </nav>
+
+   <!-- um pouco sobre a intevensão da musica pra o ser humano -->
+  <div class="cont-sobre">
+    <div class="sobre" id="sobre">
+    <div class="sobre-left"></div>
+    <div class="sobre-right"><h3> A música é uma linguagem universal capaz de despertar emoções e sensações únicas</h3>
+    <p>Às vezes você ouve alguém cantar em um idioma desconhecido, mas mesmo assim consegue sentir o que ela deseja transmitir, mesmo que não entenda especificamente o que diz a letra. O que você sabe é que a música está expressando algo alegre, triste ou dramático, etc.</p></div>
+    </div>
+    </div> 
+    <!-- imagem fixa -->
+    <div class="img1"></div>
+    <!-- campo de idolo -->
+    <div class="genero" id="Genero">
+        <div class="cont-genero">
+        <div class="escolha-idioma">
+            <select id="idioma">
+              <option value="">Escolha o Idioma</option>
+              <option value="br">Português</option>
+              <option value="eua">Inglês</option>
+              <option value="cr">Coreano</option>
+            </select>
+        </div><br><br>
+        <div class="img-genero"></div>
+        <div class="album">
+           <h1> Albuns Sugiridos por escolha de genero </h1>
+        <ul >
+           <li><a href="#" onclick="ale()">Aleatorio</a></li>
+           <li><a href="#pop" onclick="pop()">Pop</a></li>
+           <li><a href="#">Rap</a></li>
+           <li><a href="#sertanejo" onclick="ser()">Sertanejo</a></li>
+           <li><a href="#rock" onclick="roc()">Rock</a></li>
+           <li><a href="#">Pagode</a></li>
+           <li><a href="#">Gospel</a></li>
+           <li><a href="#">Funk</a></li>
+           <li><a href="mais" onclick="maisGenero()">Mais</a></li>
+        </ul>
+        <div class="cont-album">
+            <div class="cont-escolhido" style="display: block;"><img id="campo1"> <img id="campo2">  <img id="campo3"> <img id="campo4"></div>
+            <div class="cont-escolhido" style="display: none;" ><img id="campo1"> <img id="campo2">  <img id="campo3"> <img id="campo4"></div>
+            <div class="cont-escolhido" style="display: none;"><img id="campo1"> <img id="campo2">   <img id="campo3"> <img id="campo4"></div>
+            <div class="cont-escolhido" style="display: none;"><img id="campo1"> <img id="campo2">   <img id="campo3"> <img id="campo4"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- imagem fixa -->
+    <div class="img2"></div>
+
+    <!-- campo de vibe-->
+    <div class="vibe" id="lista">   
+        <div class="cont-vibe">
+            <img src="img/play1.jpg" alt=""> <img src="img/play2.jpg" alt=""> <img src="img/play3.jpg" alt="">   <img src="img/play4.jpg"alt=""> 
+        </div>
+     <!--    <table >
+            <tr>
+                <td>Nome da música</td>
+                <td>Nome do artista</td>
+                <td>Genero</td>
+            </tr>
+            <tr>
+                <td>Leal</td>
+                <td>Djonga</td>
+                <td>Hip-Hop</td>
+            </tr>
+        </table>  -->
+    </div>
+
+    <!-- imagem fixa -->
+  <div class="img3"></div>
+     
+    <!-- login e cadastro  -->
+    <div class="cad-login">
+
+        <div class="cont-login" style="display:block" id="areaLogin">
+        <div class="img-login"></div>
+        <div class="login" id="login">
+            <h2>Seja Bem-vindo(a)!</h2><br>
+            <input type="email" id="" class="campo"placeholder="Digite o E-mail Cadastrado" required><br><br>
+            <input type="password"  id="" class="campo"placeholder="Digite a senha cadastrada"><br><br>
+            <button class="btn">Login</button><br><br>
+            <h2>Não tem cadastro?</h2><br>
+            <button class="btn" onclick="cads()">Cadastra-se</button>
+        </div> 
+    </div>
+       <div class="cont-cadastro" style="display: none;" id="areaCadastro">
+         <div  class="cadastrar" >
+            <input type="text" class="campo" id="" placeholder="Digite seu Nick-Name"><br><br>
+            <input type="text" class="campo" id="" placeholder="Digite seu nome"><br><br>
+            <input type="email" id="" class="campo"placeholder="Digite um E-mail" required><br><br>
+            <input type="password"  id="" class="campo"placeholder="Digite a senha"><br><br>
+            <button onclick="" class="btn">Cadastrar</button>
+            <h2>Acessar sua conta?</h2><br>
+            <button class="btn" onclick="acessar()">Acessar</button>
+        </div>  <div class="img-cadastro"></div>
+    </div>
+</div>
+<footer>Isabela
+    
+</footer>
+</body>
+</html>
+<script>
+    function cads(){
+        areaLogin.style.display="none";
+        areaCadastro.style.display="block";
+    }
+    function acessar(){
+        areaLogin.style.display="block";
+        areaCadastro.style.display="none";
+    }
+</script>

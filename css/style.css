@@ -1,0 +1,231 @@
+html{
+    scroll-behavior: smooth;/* deixar uma rolagem suave */
+}
+*{
+    padding: 0;
+    margin: 0;
+}/* cancelando os espaçamentos da pagina */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* mouse */
+#mouse{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 450px;
+    left: 48%;
+}
+/* primeira imagem */
+header{
+    background-image: url("../img/banner.png");
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* imagem fixa */
+.img1, .img2, .img3 {
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/msc1.copia.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img2{
+    background-image: url("../img/miuta.jpg");
+}
+.img3{
+    background-image: url("../img/img4-4.jpg");
+}
+/* menu */
+nav {
+    position: sticky;
+    top: 0;
+/*   z-index: 10; */
+}
+nav a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+nav ul{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    border-bottom: #8c52ff solid 4px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 30px;
+}
+
+/* sobre a musica */
+.cont-sobre{
+    width: 100%;
+    height: 800px;
+    background-color: blueviolet;
+    color: white;
+}
+.sobre{
+    padding: 100px;
+}
+.sobre-right{
+    float: right;
+    padding-right: 100px;
+    width: 350px;
+    text-align: center;
+    font-size: 23px;
+} 
+.sobre-left , .img-genero{
+    float: left;
+    padding-left: 100px;
+    width: 450px;
+    height: 550px;
+    background-image: url("../img/msc8.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+/* genero */
+.genero{
+    height: 620px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.cont-genero{
+    padding: 100px;
+}
+.escolha-idioma select{
+    width:100% ;
+    height: 50px;
+    border-radius: 15px;
+    border-bottom: thistle solid 4px;
+    -webkit-appearance: none;/* excluir a seta do lado direito */
+    font-size: 15px;
+}
+ .img-genero{
+    width: 250px;
+    height: 400px;
+    background-image: url("../img/msc10.png");
+} 
+.album {
+  color:white;
+  text-align: center;
+}
+.album a{
+    text-decoration: none;
+    color: white;
+}
+.album li{
+    display: inline-block;
+    padding: 15px;
+}
+.album ul{
+    text-align: center;
+    font-size: 18px;
+}
+.cont-album{
+    width: 65%;
+    height: 300px;
+    display: flex;
+    float: right;
+}
+.cont-escolhido{
+    text-align: center;
+    padding-top: 10px;
+}
+#campo1, #campo2, #campo3 , #campo4{
+    width: 175px;
+    height: 190px;
+}
+/* vibe */
+.vibe{
+    width: 100%;
+    background-color: blueviolet;
+    height: 630px;
+}
+.cont-vibe{
+    display: flex;
+    padding: 10%;
+}
+.cont-vibe img{
+width: 250px;
+height: 400px;
+}
+/* login */
+.cad-login{
+    width: 100%;
+    background-color: #8c52ff;  
+    height: 650px;
+    font-size: 20px;
+}
+.img-cadastro, .img-login{
+    background-position: center;
+    background-repeat: none;
+    background-size: COVER;
+    width: 30%;
+    height: 520px;
+    padding: 20px;
+}
+.img-login {
+    float: left;
+    background-image: url("../img/msc2.png");
+    margin-left: 200px;
+}
+.img-cadastro{
+    background-image: url("../img/msc4.png"); 
+    float: right;
+    margin-right: 21%;
+}
+.login, .cadastrar{
+    background-color: black;  
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+.login{
+    float: right;
+    padding-top:12%;
+    height: 405px;
+    width: 50%;
+}
+.cadastrar{
+    float: left;
+    padding-top:7%;
+    height: 480px;
+    width: 45%;
+}
+.campo{
+    width: 50%;
+    height: 10%;
+    border: black;
+    font-size: 15px;
+}
+.btn{
+    color: black;
+    border: #8c52ff;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+}
+.cont-cadastro{
+padding:27px;
+margin-left: 10%;
+}
+.cont-login{
+    padding-top:55px;
+    padding-right:65px
+}
+/* rodapé */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
