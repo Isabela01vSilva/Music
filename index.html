@@ -33,8 +33,8 @@
     <div class="genero" id="Genero">
         <div class="cont-genero">
         <div class="escolha-idioma">
-            <select id="idioma">
-              <option value="">Escolha o Idioma</option>
+            <select id="idioma" onchange="idiomaEscolha()">
+              <option value="nada">Escolha o Idioma</option>
               <option value="br">Português</option>
               <option value="eua">Inglês</option>
               <option value="cr">Coreano</option>
@@ -42,12 +42,12 @@
         </div><br><br>
         <div class="img-genero"></div>
         <div class="album">
-           <h1> Albuns Sugiridos por escolha de genero </h1>
-        <ul >
+           <h1> Albuns Sugeridos por escolha de gênero e Idioma</h1>
+        <ul id="listaEscolhida">
            <li><a href="#" onclick="ale()">Aleatorio</a></li>
            <li><a href="#pop" onclick="pop()">Pop</a></li>
            <li><a href="#">Rap</a></li>
-           <li><a href="#sertanejo" onclick="ser()">Sertanejo</a></li>
+           <li><a href="#sertanejo" id="serta">Sertanejo</a></li>
            <li><a href="#rock" onclick="roc()">Rock</a></li>
            <li><a href="#">Pagode</a></li>
            <li><a href="#">Gospel</a></li>
@@ -55,11 +55,9 @@
            <li><a href="mais" onclick="maisGenero()">Mais</a></li>
         </ul>
         <div class="cont-album">
-            <div class="cont-escolhido" style="display: block;"><img id="campo1"> <img id="campo2">  <img id="campo3"> <img id="campo4"></div>
-            <div class="cont-escolhido" style="display: none;" ><img id="campo1"> <img id="campo2">  <img id="campo3"> <img id="campo4"></div>
-            <div class="cont-escolhido" style="display: none;"><img id="campo1"> <img id="campo2">   <img id="campo3"> <img id="campo4"></div>
-            <div class="cont-escolhido" style="display: none;"><img id="campo1"> <img id="campo2">   <img id="campo3"> <img id="campo4"></div>
-        </div>
+            <div class="cont-escolhido" style="display: block;"> <img id="campo1"> <img id="campo2">  <img id="campo3">
+                 <img id="campo4"> <img id="campo4"> <img id="campo4"></div>
+             </div>
         </div>
     </div>
     </div>
@@ -70,31 +68,26 @@
     <!-- campo de vibe-->
     <div class="vibe" id="lista">   
         <div class="cont-vibe">
-            <img src="img/play1.jpg" alt=""> <img src="img/play2.jpg" alt=""> <img src="img/play3.jpg" alt="">   <img src="img/play4.jpg"alt=""> 
+            <a href="#"><img src="img/play1.jpg" alt=""></a>
+            <span display="none">Triste</span> 
+            <a href="#"><img src="img/play2.jpg" alt=""></a>
+            <span display="none">Alegre</span>
+            <a href="#"><img src="img/play3.jpg" alt=""></a>
+            <span display="none">Contente</span>
+            <a href="#"><img src="img/play4.jpg"alt=""></a>
+             <span style="display: none;">Calmo</span>
         </div>
-     <!--    <table >
-            <tr>
-                <td>Nome da música</td>
-                <td>Nome do artista</td>
-                <td>Genero</td>
-            </tr>
-            <tr>
-                <td>Leal</td>
-                <td>Djonga</td>
-                <td>Hip-Hop</td>
-            </tr>
-        </table>  -->
     </div>
 
     <!-- imagem fixa -->
   <div class="img3"></div>
      
     <!-- login e cadastro  -->
-    <div class="cad-login">
+    <div class="cad-login" id="login">
 
         <div class="cont-login" style="display:block" id="areaLogin">
-        <div class="img-login"></div>
-        <div class="login" id="login">
+        <div class="img-login" ></div>
+        <div class="login" >
             <h2>Seja Bem-vindo(a)!</h2><br>
             <input type="email" id="" class="campo"placeholder="Digite o E-mail Cadastrado" required><br><br>
             <input type="password"  id="" class="campo"placeholder="Digite a senha cadastrada"><br><br>
@@ -104,6 +97,7 @@
         </div> 
     </div>
        <div class="cont-cadastro" style="display: none;" id="areaCadastro">
+        <div class="img-cadastro"></div>
          <div  class="cadastrar" >
             <input type="text" class="campo" id="" placeholder="Digite seu Nick-Name"><br><br>
             <input type="text" class="campo" id="" placeholder="Digite seu nome"><br><br>
@@ -112,21 +106,11 @@
             <button onclick="" class="btn">Cadastrar</button>
             <h2>Acessar sua conta?</h2><br>
             <button class="btn" onclick="acessar()">Acessar</button>
-        </div>  <div class="img-cadastro"></div>
+        </div>  
     </div>
 </div>
 <footer>Isabela
-    
 </footer>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
-<script>
-    function cads(){
-        areaLogin.style.display="none";
-        areaCadastro.style.display="block";
-    }
-    function acessar(){
-        areaLogin.style.display="block";
-        areaCadastro.style.display="none";
-    }
-</script>

@@ -26,7 +26,7 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
-/* imagem fixa */
+/* imagens fixa */
 .img1, .img2, .img3 {
     height: 500px;
     width: 100%;
@@ -46,7 +46,7 @@ header{
 nav {
     position: sticky;
     top: 0;
-/*   z-index: 10; */
+  z-index: 10;
 }
 nav a {
      text-decoration: none;
@@ -94,7 +94,7 @@ nav li{
 }
 /* genero */
 .genero{
-    height: 620px;
+    height: 730px;
     width: 100%;
     background-color: blueviolet;
 }
@@ -105,13 +105,13 @@ nav li{
     width:100% ;
     height: 50px;
     border-radius: 15px;
-    border-bottom: thistle solid 4px;
+    border-bottom: black solid 4px;
     -webkit-appearance: none;/* excluir a seta do lado direito */
     font-size: 15px;
 }
  .img-genero{
     width: 250px;
-    height: 400px;
+    height: 420px;
     background-image: url("../img/msc10.png");
 } 
 .album {
@@ -141,9 +141,10 @@ nav li{
     padding-top: 10px;
 }
 #campo1, #campo2, #campo3 , #campo4{
-    width: 175px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
 }
+#campo1:hover, #campo2:hover, #campo3:hover , #campo4:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 /* vibe */
 .vibe{
     width: 100%;
@@ -153,10 +154,15 @@ nav li{
 .cont-vibe{
     display: flex;
     padding: 10%;
+    list-style:none;
+    outline:none;
 }
 .cont-vibe img{
 width: 250px;
 height: 400px;
+}
+.cont-vibe:hover {
+    display: block;
 }
 /* login */
 .cad-login{
@@ -173,15 +179,13 @@ height: 400px;
     height: 520px;
     padding: 20px;
 }
-.img-login {
+.img-login , .img-cadastro{
     float: left;
     background-image: url("../img/msc2.png");
     margin-left: 200px;
 }
 .img-cadastro{
     background-image: url("../img/msc4.png"); 
-    float: right;
-    margin-right: 21%;
 }
 .login, .cadastrar{
     background-color: black;  
@@ -204,12 +208,12 @@ height: 400px;
 .campo{
     width: 50%;
     height: 10%;
-    border: black;
+    border: black solid 2px;
     font-size: 15px;
 }
 .btn{
     color: black;
-    border: #8c52ff;
+    border: white solid 2px;
     font-size: 18px;
     width: 150px;
     height: 45px;
