@@ -46,7 +46,11 @@ header{
 nav {
     position: sticky;
     top: 0;
+<<<<<<< HEAD
   z-index: 10;
+=======
+    z-index: 10;
+>>>>>>> d0e17d3bc2521d175f483d146da4cb121d7eebb0
 }
 nav a {
      text-decoration: none;
@@ -174,15 +178,20 @@ height: 400px;
 .img-cadastro, .img-login{
     background-position: center;
     background-repeat: none;
-    background-size: COVER;
+    background-size: cover;
     width: 30%;
     height: 520px;
     padding: 20px;
+<<<<<<< HEAD
 }
 .img-login , .img-cadastro{
+=======
+>>>>>>> d0e17d3bc2521d175f483d146da4cb121d7eebb0
     float: left;
-    background-image: url("../img/msc2.png");
     margin-left: 200px;
+}
+.img-login, .img-cadastro{
+    background-image: url("../img/msc2.png");
 }
 .img-cadastro{
     background-image: url("../img/msc4.png"); 
@@ -192,18 +201,10 @@ height: 400px;
     opacity: 0.8;
     color: white;
     text-align: center;
-}
-.login{
     float: right;
     padding-top:12%;
     height: 405px;
     width: 50%;
-}
-.cadastrar{
-    float: left;
-    padding-top:7%;
-    height: 480px;
-    width: 45%;
 }
 .campo{
     width: 50%;
@@ -220,11 +221,9 @@ height: 400px;
 }
 .cont-cadastro{
 padding:27px;
-margin-left: 10%;
 }
 .cont-login{
     padding-top:55px;
-    padding-right:65px
 }
 /* rodapé */
 footer{
