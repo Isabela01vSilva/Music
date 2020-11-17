@@ -1,3 +1,0 @@
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_indicator -- scroll bal/ barra de rolagem
-
-https://www.hostinger.com.br/tutoriais/como-deixar-um-site-responsivo/ -- site responsivo
