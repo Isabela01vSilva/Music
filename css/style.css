@@ -160,31 +160,58 @@ nav li{
     transform: scale(1.1); 
 }
 /* vibe */
-.vibe{
+.vibe, .vibe2{
     width: 100%;
     background-image: url("../img/cores.jpg");
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    height: 630px;
+    height: 550px;
 }
-.cont-vibe{
+.vibe2{
+    background-image: url('../img/core2.jpg');
+}
+.cont-vibe, .cont-vibe2{
     width: 80%;
     height: 550px;
     background-color: rgba(10,23,55,0.5);
-    margin-left: 150px;
-}
-.mani-img{
-    /* background-color: rgba(55, 10, 38, 0.5); */
-    width: 90%;
-    height: 550px;
-    margin-left: 50px;
-    padding-top: 50px;
+    margin-left: 100px;
+    padding-top: 70px;
+    padding-left: 100px;
     display: flex;
-    padding: 10px 10px;
+}
+.cont-vibe2{
+    /* background-color: rgba(170, 33, 204, 0.3); */
+    background-color:rgba(0,0,0, 0.5);
+    
 }
 #img1-vibe, #img2-vibe, #img3-vibe{
-      height: 310px;
+    height: 330px;
+    width: 270px;
+    padding: 10px 30px
+}
+.type-vibe{
+    height: 550px;
+}
+#cont-text, #cont-text2{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 15px;
+    left: 70px;
+    top: -50px;
+   /*  padding: 40px; */
+}
+#cont-text2{
+    top: 50px;
+}
+.hr-vibe{
+    background-color: rgb(57, 206, 206,0.6);
+    width: 50px;
+    height: 5px;
+    border:none;
 }
 /* login */
 .cad-login{
@@ -236,11 +263,12 @@ nav li{
     height: 45px;
 }
 .cont-cadastro{
-padding:27px;
+    padding:27px;
 }
 .cont-login{
     padding-top:55px;
 }
+
 /* rodapé */
 footer{
     width: 100%;
