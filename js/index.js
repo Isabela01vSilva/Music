@@ -98,6 +98,7 @@ function pagode(){
     campo6.src="https://pagonejando.net/wp-content/uploads/2019/10/Quarto-e-Sala-Dilsinho-2019.jpg";
     }
 }
+
 function cads(){
     areaLogin.style.display="none";
     areaCadastro.style.display="block";
