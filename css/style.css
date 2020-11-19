@@ -41,7 +41,7 @@ header{
     height: 440px;
 }
 .img3{
-    background-image: url("../img/img4-4.jpg");
+    background-image: url("../img/miuta.jpg");
 }
 /* menu */
 nav {
@@ -160,35 +160,48 @@ nav li{
     transform: scale(1.1); 
 }
 /* vibe */
-.vibe, .vibe2{
+.vibe1, .vibe2{
     width: 100%;
     background-image: url("../img/cores.jpg");
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    height: 550px;
+    height: 650px;
 }
-.vibe2{
+/* .vibe2{
     background-image: url('../img/core2.jpg');
+} */
+.seta-text{
+    float: right;
+    color: white;
+    font-size: 22px;
+    text-align: right;
+    margin-right: 100px;
+    position: relative;
+    height: 20px;
+    top: 50px;
+}
+.seta-text img{
+    cursor: pointer;
+    width: 40px;
 }
 .cont-vibe, .cont-vibe2{
     width: 80%;
-    height: 550px;
+    height: 450px;
     background-color: rgba(10,23,55,0.5);
-    margin-left: 100px;
-    padding-top: 70px;
-    padding-left: 100px;
+    margin-left: 130px;
+    padding-top: 90px;
+    padding-left: 50px;
     display: flex;
 }
 .cont-vibe2{
     /* background-color: rgba(170, 33, 204, 0.3); */
     background-color:rgba(0,0,0, 0.5);
-    
 }
 #img1-vibe, #img2-vibe, #img3-vibe{
     height: 330px;
     width: 270px;
-    padding: 10px 30px
+    padding: 10px 30px;
 }
 .type-vibe{
     height: 550px;
@@ -202,17 +215,48 @@ nav li{
     padding-left: 15px;
     left: 70px;
     top: -50px;
-   /*  padding: 40px; */
 }
 #cont-text2{
     top: 50px;
-}
+} 
 .hr-vibe{
-    background-color: rgb(57, 206, 206,0.6);
+    background-color: rgba(206, 57, 132, 0.8);
     width: 50px;
     height: 5px;
     border:none;
 }
+.type-vibe:hover, .type-vibe2:hover{
+    transform: translateY(-20px); /* O tamanho que a imagem vai saltar */
+}
+.type-vibe:hover img, .type-vibe2:hover img{
+    opacity: 0.5;
+}
+.type-vibe p , .type-vibe2 p {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    padding: 35px 15px;
+    margin-left: -25px;
+    font-size: 22px;
+    color: #faf4de;
+    text-align: center;
+    opacity: 0; /* Um jeito de esconder a div */
+    transform:translateY(50%);  /* Movimentação, vai descer ou subir */
+}
+.type-vibe2 p {
+    transform:translateY(-10%);
+    height: 250px;
+}
+.type-vibe:hover p, .type-vibe2:hover p {
+ opacity: 1;
+ transform: translateY(-150px); /* Top da mensagem */
+ transition: transform 1.5s; /* O tempo de quando passa o mouse */
+}
+.type-vibe2:hover p {
+    opacity: 1;
+    transform: translateY(100px); /* Top da mensagem */
+    transition: transform 1.5s; /* O tempo de quando passa o mouse */
+   }
 /* login */
 .cad-login{
     width: 100%;

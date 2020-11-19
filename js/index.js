@@ -107,3 +107,11 @@ function acessar(){
     areaLogin.style.display="block";
     areaCadastro.style.display="none";
 }
+function setadireita(){
+    vibe1.style.display = "none";
+    vibe2.style.display = "block";
+}
+function setaesquerda(){
+    vibe1.style.display = "block";
+    vibe2.style.display = "none";
+}
