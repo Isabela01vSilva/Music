@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:  #8c52ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100%;
+    width: 300px;
+    background-color: black;
+    position: fixed;
+    float: left;
+}
+.cont-menu{
+    width: 80%;
+    height: 400px;
+    margin-top: 100px;
+    margin-left:40px;
+    color: white;
+    text-align: center;
+    /* background-color: blue; */
+}
+.cont-menu img{
+    width: 150px;
+}
+.cont-menu h3{
+    font-size: 25px;
+}
+.cont-menu #close {
+    width: 50px;
+}
