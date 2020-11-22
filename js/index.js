@@ -106,12 +106,29 @@ function cads(){
 function acessar(){
     areaLogin.style.display="block";
     areaCadastro.style.display="none";
+    
 }
 function setadireita(){
     vibe1.style.display = "none";
     vibe2.style.display = "block";
+    codevibe.style.transition=' 1s';
+    
 }
 function setaesquerda(){
     vibe1.style.display = "block";
     vibe2.style.display = "none";
 }
+/* scroll rolativo */
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+/* function teste() {
+    var div = document.getElementById("div_none");
+    var p = document.createElement("p");
+    p.innerHTML= "criando esse p com js";
+    div.appendChild(p);
+} */

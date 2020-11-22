@@ -64,13 +64,23 @@ nav li{
     display: inline-block;
     padding: 30px;
 }
-
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  .progress-bar {
+    height: 8px;
+    background: #2b2960;
+    width: 0%;
+  }
 /* sobre a musica */
 .cont-sobre{
     width: 100%;
     height: 800px;
-    background-color:  #22142b;
-    color: white;
+    background-color:  #22142b; 
+   /*  background-image: linear-gradient( to right, red, green, yellow, blue );
+     */color: white;
 }
 .sobre{
     padding: 100px;
@@ -94,7 +104,7 @@ nav li{
 }
 /* genero */
 .genero{
-    height: 730px;
+    height: 750px;
     width: 100%;
     background-color:  #22142b;
 }
@@ -225,13 +235,13 @@ nav li{
     height: 5px;
     border:none;
 }
-.type-vibe:hover, .type-vibe2:hover{
+.type-vibe:hover{
     transform: translateY(-20px); /* O tamanho que a imagem vai saltar */
 }
-.type-vibe:hover img, .type-vibe2:hover img{
+.type-vibe:hover img{
     opacity: 0.5;
 }
-.type-vibe p , .type-vibe2 p {
+.type-vibe p  {
     width: 200px;
     height: 150px;
     background-color: black;
@@ -243,20 +253,69 @@ nav li{
     opacity: 0; /* Um jeito de esconder a div */
     transform:translateY(50%);  /* Movimentação, vai descer ou subir */
 }
-.type-vibe2 p {
-    transform:translateY(-10%);
-    height: 250px;
-}
-.type-vibe:hover p, .type-vibe2:hover p {
+.type-vibe:hover p{
  opacity: 1;
  transform: translateY(-150px); /* Top da mensagem */
  transition: transform 1.5s; /* O tempo de quando passa o mouse */
 }
-.type-vibe2:hover p {
-    opacity: 1;
-    transform: translateY(100px); /* Top da mensagem */
-    transition: transform 1.5s; /* O tempo de quando passa o mouse */
-   }
+/* definir as propriedades dos pop'ups*/
+#estilo-vibe, #estilo-vibe2  {
+    width: 100%;
+    height: 650px;
+    top: 0px;
+    left:0px;
+    background-color: rgba(0,0,0,1.0);
+    position: fixed;
+    display: none;
+}
+#estilo-vibe:target, .cont-list:target{
+    display: block;
+} 
+#estilo-vibe2:target, .cont-list:target{
+    display: block;
+} 
+#estilo-vibe:target,  .cont-list{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+#estilo-vibe2:target, .cont-list{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.cont-list {
+    width: 85%;
+    height: 630px;
+    margin-left: 60px;
+}
+.close{
+    background-image: url("../img/sair.png");;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: -450px;
+    right: 30px;
+}
+.close:hover{
+    opacity: 1.0;
+}
+/* PlayList */
+.list-songs{
+    padding-top:130px;
+    padding-left: 150px;
+    width: 80%;
+    list-style: none;
+    color: white;
+    font-size: 22px;
+}
+.song{
+    border-bottom:1px solid aqua;
+    padding:10px;
+}
 /* login */
 .cad-login{
     width: 100%;

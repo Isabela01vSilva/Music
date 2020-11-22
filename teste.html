@@ -3,11 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .list-vibe span{
     display: none;
     padding: 30px;
@@ -42,86 +37,235 @@ height: 400px;
 .cont-vibe li{
     display: inline-block;
 }
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
+/* definir as propriedades dos pop'ups*/
+#estilo-vibe {
+    width: 100%;
+    height: 700px;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+ #estilo-vibe:target, .cont-list:target{
+    display: block;
+} 
+#estilo-vibe:target  .cont-list{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.cont-list {
+    width: 720px;
+    height: 405px;
+}
+.cont-list  img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+/* .close {
+ background-color: #606061;
+ color: #FFFFFF;
+ line-height: 25px;
+ position: absolute;
+ right: -12px;
+ text-align: center;
+ top: -10px;
+ width: 24px;
+ text-decoration: none;
+ font-weight: bold;
+ -webkit-border-radius: 12px;
+ -moz-border-radius: 12px;
+ border-radius: 12px;
+}
+.close:hover {
+ background-color: #b50909;
+} */
+ #texto-livros hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgb(52, 73, 94), rgba(0, 0, 0, 0));
+}
+#texto-livros{
+    color:#fff;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    width: 50%;
+    font-size: 17px;
+    top: 20px;
+}
+/* lista de musica */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display:flex;
+  flex-direction:colummn;
   width: 100%;
-  background-color: #f1f1f1;
+  min-height: 108hv;
+  background-color: black;
 }
-
-.header h2 {
-  text-align: center;
-}
-
-.progress-container {
+.main-container{
   width: 100%;
-  height: 8px;
-  background: #ccc;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
-.progress-bar {
-  height: 8px;
-  background: #4caf50;
-  width: 0%;
+.play-list{
+  width: 100%;
+  min-width: 400px;
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
 }
-
-.content {
-  padding: 100px 0;
-  margin: 50px auto 0 auto;
-  width: 80%;
+.container-post{
+  width: 100%;
+  height: 400px;
+}
+.container-post img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-title{
+ padding:15px 25px;
+ width: 100%;
+}
+.container-title .name-artis{
+ padding:5px 0px;
+ color: #fff;
+ font-size: 16px;
+font-family: sans-serif;
+}
+.container-title h2{
+  color: #fff;
+  padding:5px 0px;
+}
+.container-songs{
+  width: 100%;
+  padding:10px 25px;
+  min-height:  calc(100% - 400px);
+}
+.list{
+  width: 100%;
+}
+.song{
+  list-style: none;
+  color:aqua;
+  font-size: 19px;
+  padding: 15px 0px;
+  border-bottom:1px solid aqua;
+  transition:  all 0.4s;
+  cursor: pointer
+}
+.song:hover{
+ color: blueviolet;
+ border-bottom:1px solid aqua;
+}
+.container-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.container-background img{
+  width: 200%;
+  height: 200%;
+  margin: -50%;
+  filter: blur(20px);
 }
 </style>
 </head>
 <body>
+<a href="#L1">
+  <img src="img/play1.jpg" alt="Primeiro Livro" width="150px"></a>
+<div id="estilo-vibe1">
+  <div class="cont-list">
+   
+        <section class="play-list">
+      
+      <div class="container-title">
+        <p class="name-artis">gggggggg</p>
+        <h2>album</h2>
+      </div>
+      <div class="container-songs">
+        <ul class="list-songs">
+          <li class="song">
+            <p>Artist - name song 1</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 2</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 3</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 4</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 5</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 6</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 7</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 8</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 9</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 10</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 11</p>
+          </li>
+          <li class="song">
+            <p>Artist - name song 12</p>
+          </li>
+        </ul>
+      </div>
+        </section> 
+      </div>
+  <a href="#"id="close">Sair</a>
+  </div>
 
-<div class="header">
-  <h2>Scroll Indicator</h2>
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>  
-</div>
-
-<div class="content">
-  <h3>Scroll Down to See The Effect</h3>
-  <p>We have created a "progress bar" to <b>show how far a page has been scrolled</b>.</p>
-  <p>It also <b>works when you scroll back up</b>.</p>
-  <p>It is even <b>responsive</b>! Resize the browser window to see the effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
-
-<div class="cont-vibe">
+ 
+  <!--   <script>
+    var teste = new Audio();
+    teste.src = 'https://youtu.be/okLRDPd708I';
+    </script> -->
+    
+<!-- <div class="cont-vibe">
+  
   <ul>  
-  <li class="list-vibe"><a href="#"><img src="img/play1.jpg" alt="">
+  <li class="list-vibe">
+    <a href="#"><img src="img/play1.jpg" alt="" onmouseover="teste.play()" class="menu">
   <span display="none">Triste</span></a></li>
-  <li class="list-vibe"><a href="#"><img src="img/play2.jpg" alt="">
+  <li class="list-vibe">
+    <a href="#"><img src="img/play2.jpg" alt="">
   <span display="none">Alegre</span></a></li>
-  <li class="list-vibe"><a href="#"><img src="img/play3.jpg" alt="">
+  <li class="list-vibe">
+    <a href="#"><img src="img/play3.jpg" alt="">
   <span display="none">Contente</span></a></li>
-  <li class="list-vibe"><a href="#"><img src="img/play4.jpg"alt="">
+  <li class="list-vibe">
+    <a href="#"><img src="img/play4.jpg"alt="">
    <span>Calmo</span></a></li>
   </ul>
-</div>
-<script>
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-</script>
+</div> -->
 
 </body>
 </html> 
