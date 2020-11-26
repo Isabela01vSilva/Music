@@ -5,22 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil-style.css">
     <link rel="icon" href="img/notas-musicais.png">
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 <body>
+
+<!-- Menu de navegaçao -->
     <header>
-        <div class="cont-menu">
-        <img src="img/perfil.png" alt=""><br><br>
-       <h3><b>Nome da pessoa</b></h3>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-       <a href="index.html"> <img src="img/sair.png" alt="" id="close" > Sair</a>
-    </div>
+        <div class="container">
+          <div class="menu">
+           <a href="#play" class="btn-play"><b>Playlist </b></a>
+           <hr class="menu-hr">
+           <a href="#youtuber" class="btn-play_youtube"><b>Youtube </b></a>
+          <p>Seja Bem vindo(a)!</p>
+          <div id="nomeusuario"></div>
+          <a href="index.html" class="menu-sair">Sair</a>
+        </div>
+        </div>
     </header>
+
+<!-- Imagem de destaque   -->
+  <div class="container">
+      <div class="banner"></div>
+    </div> 
+  
+<!-- Playlist na pagina -->
+<div class="container" id="play">
+  <div class="listas">
+    <h2>Playlist</h2>
+   <div class="cont-listas">
+    <ul>
+      <li>
+        <img src="img/alegrin.jpg">
+        <span>Alegre</span></li>
+        
+      <li>
+        <img src="img/Menina que escuta a música Citar Otimismo.png ">
+        </li>
+      <li>
+        <img src="img/tristi.jpg" >
+        <span>Triste</span></li>
+  </ul>
+</div>
+     <div class="cont-listas">
+      <ul>
+        <li>
+          <img src="img/contente.jpg" >
+          <span>Contente</span></li>
+        <li>
+           <img src="img/amor.jpg">
+           <span>Apaixonada</span></li>
+        <li>
+          <img src="img/pai.jpg" >
+          <span>Exercicios fisico</span></li>
+  </ul>
+</div> 
+  </div>
+</div>
+<!-- Playlist no Youtube -->
+<div class="container" id="youtuber">
+  <div class="cont-youtube">
+  <div class="listas-youtube">
+    <h2>Youtube PlayList</h2>
+      <img src="img/youtube1.png" style="width: 610px;" alt="homem escolhendo o play do youtube">
+      <div class="text-youtube">
+     <b> Escute Nossas PlayList pelo Youtube!</b>
+  </div>
+</div>
+</div>
+
+<!-- Rodape -->
+  <footer>
+    <div class="rodape">
+      <img src="img/spotify.png" alt="spotify" class="icone-spotify">
+      <img src="img/youtube.png" alt="youtube" class="icone-youtube">
+    <p>Copyright © 2020  |  Isabela Vitoria</p>
+    </div>
+  </footer> 
 </body>
 </html>

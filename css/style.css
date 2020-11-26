@@ -129,7 +129,7 @@ nav li{
 }
 .escolha-idioma select, .album li select{
     border-radius: 15px;
-    border-bottom: black solid 4px;
+    border-bottom: #8c52ff solid 4px;
     -webkit-appearance: none;/* excluir a seta do lado direito */
     font-size: 18px;
 }
@@ -156,13 +156,19 @@ nav li{
     padding: 15px;
     cursor: pointer;
 }
+.album ul{
+    text-align: center;
+    font-size: 18px;
+}
 .album li select{
     width: 200px;
     height: 30px;
 }
-.album ul{
-    text-align: center;
-    font-size: 18px;
+.album li:hover {
+    color:  #8c52ff;
+    border-bottom: #8c52ff solid 4px;
+    transition: 0.9s;
+    font-size: 20px;
 }
 .cont-album{
     width: 65%;

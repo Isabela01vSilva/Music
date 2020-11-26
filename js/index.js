@@ -1,3 +1,4 @@
+/* A troca de imagens no campo genero de acordo com o idioma e genero que escolheu */
 function idiomaEscolha() {
     if(idioma.value == 'br'){
         campo1.src= "https://www.vagalume.com.br/henrique-e-juliano/discografia/menos-e-mais.jpg";
@@ -98,37 +99,30 @@ function pagode(){
     campo6.src="https://pagonejando.net/wp-content/uploads/2019/10/Quarto-e-Sala-Dilsinho-2019.jpg";
     }
 }
-
+/* trocar de login para cadastro */
 function cads(){
     areaLogin.style.display="none";
     areaCadastro.style.display="block";
 }
+/* trocar de cadastro para login */
 function acessar(){
     areaLogin.style.display="block";
     areaCadastro.style.display="none";
-    
 }
+/* Trocar a vibe */
 function setadireita(){
     vibe1.style.display = "none";
     vibe2.style.display = "block";
-    codevibe.style.transition=' 1s';
-    
 }
 function setaesquerda(){
     vibe1.style.display = "block";
     vibe2.style.display = "none";
-}
+} 
 /* scroll rolativo */
-window.onscroll = function() {myFunction()};
-function myFunction() {
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-/* function teste() {
-    var div = document.getElementById("div_none");
-    var p = document.createElement("p");
-    p.innerHTML= "criando esse p com js";
-    div.appendChild(p);
-} */
