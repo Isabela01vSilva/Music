@@ -119,10 +119,21 @@ function setaesquerda(){
     vibe2.style.display = "none";
 } 
 /* scroll rolativo */
-  window.onscroll = function() {myFunction()};
+  window.onscroll = function() {
+  myFunction()};
   function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+/* lista de musica */
+/* function listsong(){
+    var listsongul = getElementById("list-song");
+    for(let index = 0; index < 10; index ++){
+        var itemListSong = document.createElement("li");
+        itemListSong.className = "song";
+        var paragrafoItemSong.innerHTML
+
+    }
+} */

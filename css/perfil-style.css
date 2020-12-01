@@ -6,16 +6,16 @@ html{
     scroll-behavior: smooth;/* deixar uma rolagem suave */
 }
 body{
-    background-color:  #8c52ff;
+    background-color:  rgb(140, 82, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 /* estlizando o scrool bar */
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: white;  
+    background-color: rgb(255, 255, 255);  
 } 
 ::-webkit-scrollbar-thumb {   
-background-color: #3e005c;   
+background-color: rgb(62, 0, 92);   
 }
 /* deixar tudo da pagina centralizado  */
 .container{
@@ -24,10 +24,10 @@ background-color: #3e005c;
 }
 #subirTopo {
     text-decoration: none;
-    background:  #3e005c;
+    background:  rgb(62, 0, 92);
     bottom: 30px;
     right: 30px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     cursor: pointer;
     padding: 15px;
@@ -45,18 +45,15 @@ background-color: #3e005c;
 header{
     height: 70px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     transition: height 1s;
 }
 header:hover  {
     height: 90px;
 } 
-#img-sair{
-    width: 40px;
-}
 .menu{
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     float: right;
     padding-top:10px
@@ -68,7 +65,7 @@ header:hover  {
     font-size: 20px;
 }
 .menu-sair{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size:18px;
     border-left: 1px solid white;
@@ -82,7 +79,7 @@ header:hover  {
     border:none;
 }
 .btn-play,.btn-play_youtube{
-    color:  white;
+    color: rgb(255, 255, 255);
     font-size:23px;
     text-decoration: none;
     margin-top:15px;
@@ -91,7 +88,7 @@ header:hover  {
 .menu-hr{
     width: 1px;
     height: 60px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top:0px;
 }
 .btn-play_youtube{
@@ -99,7 +96,7 @@ header:hover  {
     margin-right: 0px;
 }
 .btn-play_youtube:hover{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 .btn-play:hover{
     color: rgb(174, 0, 255);
@@ -114,22 +111,22 @@ header:hover  {
     height: 570px;
     margin-left:130px; 
 }
-/* Listas */
+/* Listas que vao pro youtube */
 .listas,.listas-youtube {
     margin-top:30px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 .listas{
-    height: 880px;
+    height: 820px;
 }
 .listas-youtube{
     height: 1200px; 
 }
 .listas h2,.listas-youtube h2{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-bottom: #3e005c solid 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     width: 100%;
     padding:15px;
@@ -168,14 +165,62 @@ header:hover  {
 .cont-listas img{
     width: 290px;
     height: 340px;
+    transition: all linear 0.4s;
 }
 .cont-listas ul li:hover img{
     opacity: 0.5;
 }
-/* youtube  */
+/* pop-up playList*/
+#tentando  {
+    width: 75%;
+    height: 670px;
+    top: 0px;
+    left:198px;
+    background-color: rgba(0,0,0,1.0);
+    position: fixed;
+    display: none;
+}
+#tentando:target{
+    display: block;
+} 
+/*tag audio com as listas */
+.cont-play{
+    width: 80%;
+    padding: 90px;
+}
+#playlist{
+    list-style: none;
+    font-size: 20px;
+}
+#audioPlayer{
+    width: 100%;
+}
+#playlist li{
+    padding-top:15px;
+}
+#playlist li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#playlist .current-song a{
+    color: rgb(140, 82, 255);
+}
+/* fechar o pop */
+.close{
+    color: rgb(255, 0, 0);
+    float: right; 
+    margin-right: 55px;
+    margin-top: -15px;
+    text-decoration: none;
+}
+/* legenda no final */
+.ultimo-texto-listas{
+    float: right;
+}
+/* youtube */
 .text-youtube{
-    background-color:#8c52ff ;
-    color: black;
+    background-color:rgb(140, 82, 255) ;
+    color: rgb(0, 0, 0);
     font-size: 50px;
     text-align: right;
     float: right;
@@ -189,24 +234,22 @@ header:hover  {
     width: 100%;
     height: 800px;
     margin-top: 60px;
-    background-color:#3e005c;
 }
 .titulo-youtube{
-    color:white;
     margin-left: 35px;
     font-size: 30px;
     padding-top: 30px;
     font-weight: bold;
+    color:rgb(64, 2, 95 , 0.9);
 }
 .videos-youtube{
     height: 500px;
-    width: 600px;
-}
-.videos-youtube2{
-    display: flex;
-    float: right;
-    margin-top: -500px;
-    margin-right: 15px;
+    width: 635px;
+    position: relative;
+    left: 80px;
+    margin-top:35px;
+    background-color:rgb(64, 2, 95 , 0.9);
+    border-radius: 5px;
 }
 iframe{
     margin-left: 10px;
@@ -214,7 +257,7 @@ iframe{
     border:none;
 }
 .ultimaimg{
-    margin-top:-330px;
+    margin-top:-300px;
     float: right;
     width: 450px;
     height: 400px;
@@ -223,17 +266,16 @@ iframe{
 footer{
     width: 100%;
     background-color:rgba(0,0,0);
-    color: white;
+    color: rgb(255, 255, 255);
     height: 100px;
 }
 .rodape{
-    padding-left:200px;
+    padding-left:50px;
     display: flex;
 }
 .icone-spotify, .icone-youtube{
     width: 70px;
     height: 70px;
-    margin-left:20px;
 }
 .icone-youtube{
     margin-top:30px; 
@@ -243,6 +285,6 @@ footer{
 }
 .rodape p {
     padding-top:40px;
-    padding-left: 35px;
+    padding-left: 15px;
     font-size: 20px;
 } 

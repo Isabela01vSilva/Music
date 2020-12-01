@@ -179,18 +179,16 @@ nav li{
 .cont-escolhido{
     text-align: center;
     padding-top: 10px;
+    
 }
 #campo1, #campo2, #campo3 , #campo4, #campo5, #campo6{
     width: 200px;
     height: 200px;
+    transition: all linear 0.4s;/* tempo que ele dara o pulo  */
 }
 /* Efeito para a imagem aumentar */
 #campo1:hover, #campo2:hover, #campo3:hover , #campo4:hover ,#campo5:hover, #campo6:hover{ 
-    -webkit-transform: scale(1.1); 
-    -moz-transform: scale(1.1); 
-    -o-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
-    transform: scale(1.1); 
+    transform: scale(1.1); /* pra dar o pulo pra frente */
 }
 /* vibe */
 .vibe1, .vibe2{
@@ -289,20 +287,12 @@ nav li{
     position: fixed;
     display: none;
 }
-#estilo-vibe:target, .cont-list:target{
+#estilo-vibe:target{
     display: block;
 } 
-#estilo-vibe2:target, .cont-list:target{
+#estilo-vibe2:target{
     display: block;
 } 
-#estilo-vibe:target,  .cont-list{
-    transition: all .3s;
-    transition-delay:  .2s;
-}
-#estilo-vibe2:target, .cont-list{
-    transition: all .3s;
-    transition-delay:  .2s;
-}
 .cont-list {
     width: 85%;
     height: 630px;
